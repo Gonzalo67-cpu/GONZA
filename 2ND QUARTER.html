@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors & Lessons</title>
+
+  <link rel="stylesheet" href="2ND QUARTER CSS.css" type="text/css">
+</head>
+
+<body>
+  <header id="top">
+    <h1>2ND QUARTER</h1>
+    <p>Understanding CSS types, syntax, and all kinds of selectors (from Lessons 1–4)</p>
+  </header>
+
+  <nav>
+    <a href="#lesson1">Lesson 1</a>
+    <a href="#lesson2">Lesson 2</a>
+    <a href="#lesson3">Lesson 3</a>
+    <a href="#lesson4">Lesson 4</a>
+  </nav>
+
+  <main>
+    <!-- LESSON 1 -->
+    <section id="lesson1" class="lesson">
+      <h2>Lesson 1: What is CSS?</h2>
+      <p><strong>CSS</strong> (Cascading Style Sheets) describes how HTML elements are displayed.</p>
+      <p>It separates content (<b>HTML</b>) from presentation (<b>CSS</b>).</p>
+      <p>Three layers of a webpage:</p>
+      <ul>
+        <li>Content layer – HTML</li>
+        <li>Presentation layer – CSS</li>
+        <li>Behavior layer – JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- LESSON 2 -->
+    <section id="lesson2" class="lesson">
+      <h2>Lesson 2: Types of Style Sheets</h2>
+
+      <p>There are 3 types of CSS:</p>
+      <ol>
+        <li class="inline">Inline – inside the tag using <code>style=""</code></li>
+        <li class="internal">Internal – inside the &lt;style&gt; tag</li>
+        <li class="external">External – linked with a separate <code>.css</code> file</li>
+      </ol>
+
+      <p>Example of a CSS Rule:</p>
+      <div class="example-box">
+        selector { property: value; }
+      </div>
+    </section>
+
+    <!-- LESSON 3 -->
+    <section id="lesson3" class="lesson">
+      <h2>Lesson 3: Display, Div, and Span</h2>
+
+      <div>
+        <p><code>&lt;div&gt;</code> is a block-level container. It starts on a new line.</p>
+        <p><code>&lt;span&gt;</code> is inline and used to style text <span class="highlight">within a line</span>.</p>
+      </div>
+
+      <div class="example-box">
+        display: block;  
+        display: inline;  
+        display: none;
+      </div>
+    </section>
+
+    <!-- LESSON 4 -->
+    <section id="lesson4" class="lesson">
+      <h2>Lesson 4: CSS Selectors</h2>
+
+      <h3>Common Types of Selectors</h3>
+      <ul>
+        <li><b>Universal Selector:</b> <code>* { margin: 0; }</code></li>
+        <li><b>Element Selector:</b> <code>p { color: blue; }</code></li>
+        <li><b>Class Selector:</b> <code>.note { background: yellow; }</code></li>
+        <li><b>ID Selector:</b> <code>#top { background: navy; }</code></li>
+        <li><b>Group Selector:</b> <code>h1, h2, p { text-align: center; }</code></li>
+        <li><b>Descendant Selector:</b> <code>div p { color: green; }</code></li>
+        <li><b>Child Selector:</b> <code>ul > li { font-weight: bold; }</code></li>
+        <li><b>Pseudo-class Selector:</b> <code>a:hover { color: red; }</code></li>
+      </ul>
+
+      <h3>Example:</h3>
+      <div class="selectors">
+        <p class="note">This paragraph uses a class selector.</p>
+        <p id="unique">This one uses an ID selector.</p>
+        <p>Hover over this <a href="#lesson1">link</a> to see a pseudo-class.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TLE / ICT 9 – CSS Lessons</p>
+  </footer>
+</body>
+</html>

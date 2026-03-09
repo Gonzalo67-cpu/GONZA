@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ekonomiks Learning Website</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+header{
+text-align:center;
+padding:40px;
+background:#020617;
+border-bottom:3px solid #38bdf8;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+color:#38bdf8;
+}
+
+header p{
+opacity:0.8;
+}
+
+nav{
+background:#020617;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+margin-bottom:40px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+h2{
+color:#38bdf8;
+margin-top:0;
+}
+
+ul{
+line-height:1.8;
+}
+
+canvas{
+background:white;
+margin-top:20px;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Ekonomiks</h1>
+<p>Pambansang Kaunlaran at Mga Sektor ng Ekonomiya</p>
+
+</header>
+
+<nav>
+
+<a href="#kaunlaran">Kaunlaran</a>
+<a href="#agrikultura">Agrikultura</a>
+<a href="#industriya">Industriya</a>
+<a href="#paglilingkod">Paglilingkod</a>
+<a href="#impormal">Impormal</a>
+<a href="#kalakalan">Kalakalang Panlabas</a>
+
+</nav>
+
+<section id="kaunlaran">
+
+<div class="card">
+
+<h2>Pambansang Kaunlaran</h2>
+
+<p>
+Ang pambansang kaunlaran ay tumutukoy sa pagbuti ng kalagayang pang-ekonomiya, panlipunan, at pampolitika ng isang bansa kung saan ang mga mamamayan ay nakakaranas ng mas mataas na kalidad ng pamumuhay.
+</p>
+
+<h3>Mga Konsepto ng Kaunlaran</h3>
+
+<ul>
+
+<li><b>Pagbabago</b> – proseso ng pag-iiba ng kalagayan ng lipunan at ekonomiya.</li>
+
+<li><b>Pag-unlad</b> – pagtaas ng kalidad ng pamumuhay ng mamamayan.</li>
+
+<li><b>Pagsulong</b> – pag-usad ng kakayahan, kaalaman, at teknolohiya.</li>
+
+<li><b>Ebolusyon</b> – unti-unting pagbabago sa loob ng mahabang panahon.</li>
+
+</ul>
+
+<h3>Mga Salik ng Pag-unlad ng Ekonomiya</h3>
+
+<ul>
+
+<li>Likas na Yaman</li>
+<li>Yamang Tao</li>
+<li>Kapital</li>
+<li>Teknolohiya at Inobasyon</li>
+
+</ul>
+
+<h3>Human Development Index</h3>
+
+<p>
+Ang HDI ay ginagamit upang masukat ang antas ng kaunlaran ng isang bansa batay sa:
+</p>
+
+<ul>
+
+<li>Kalusugan</li>
+<li>Edukasyon</li>
+<li>Antas ng pamumuhay</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="agrikultura">
+
+<div class="card">
+
+<h2>Sektor ng Agrikultura</h2>
+
+<p>
+Ang agrikultura ay ang sektor ng ekonomiya na may kinalaman sa pagtatanim ng mga halaman at pag-aalaga ng hayop. Ito ang pangunahing pinagmumulan ng pagkain at hilaw na materyales para sa industriya.
+</p>
+
+<h3>Mga Gawain sa Agrikultura</h3>
+
+<ul>
+
+<li>Pagsasaka</li>
+<li>Pangingisda</li>
+<li>Paghahayupan</li>
+<li>Paggugubat</li>
+
+</ul>
+
+<h3>Kahalagahan ng Agrikultura</h3>
+
+<ul>
+
+<li>Nagbibigay ng pagkain sa mamamayan</li>
+<li>Pinagkukunan ng hilaw na materyales</li>
+<li>Nagbibigay ng trabaho</li>
+<li>Nagpapasok ng dolyar sa bansa</li>
+
+</ul>
+
+<canvas id="agriChart" width="700" height="350"></canvas>
+
+</div>
+
+</section>
+
+<section id="industriya">
+
+<div class="card">
+
+<h2>Sektor ng Industriya</h2>
+
+<p>
+Ang sektor ng industriya ay tumutukoy sa pagproseso ng mga hilaw na materyales upang makagawa ng mga produkto na maaaring gamitin o ibenta sa pamilihan.
+</p>
+
+<h3>Sub-Sektor ng Industriya</h3>
+
+<ul>
+
+<li>Pagmimina</li>
+<li>Pagmamanupaktura</li>
+<li>Konstruksyon</li>
+<li>Utilities</li>
+
+</ul>
+
+<h3>Kahalagahan</h3>
+
+<ul>
+
+<li>Nagbibigay ng maraming trabaho</li>
+<li>Nagpapasok ng kita sa bansa</li>
+<li>Nagpapalago ng ekonomiya</li>
+
+</ul>
+
+<canvas id="industryChart" width="700" height="350"></canvas>
+
+</div>
+
+</section>
+
+<section id="paglilingkod">
+
+<div class="card">
+
+<h2>Sektor ng Paglilingkod</h2>
+
+<p>
+Ang sektor ng paglilingkod ay nagbibigay ng mga serbisyo na tumutulong sa produksyon, distribusyon, at pagkonsumo ng mga produkto.
+</p>
+
+<h3>Mga Halimbawa</h3>
+
+<ul>
+
+<li>Transportasyon</li>
+<li>Komunikasyon</li>
+<li>Pananalapi</li>
+<li>Kalakalan</li>
+<li>Real Estate</li>
+
+</ul>
+
+<h3>Kahalagahan</h3>
+
+<ul>
+
+<li>Nagbibigay ng trabaho</li>
+<li>Tumutulong sa paggalaw ng ekonomiya</li>
+<li>Nagpapataas ng GDP</li>
+
+</ul>
+
+<canvas id="serviceChart" width="700" height="350"></canvas>
+
+</div>
+
+</section>
+
+<section id="impormal">
+
+<div class="card">
+
+<h2>Impormal na Sektor</h2>
+
+<p>
+Ang impormal na sektor ay tumutukoy sa mga gawaing pangkabuhayan na hindi rehistrado sa pamahalaan at hindi nagbabayad ng buwis.
+</p>
+
+<h3>Halimbawa</h3>
+
+<ul>
+
+<li>Street vendor</li>
+<li>Pedicab driver</li>
+<li>Karpintero</li>
+<li>Sari-sari store</li>
+
+</ul>
+
+<h3>Kahalagahan</h3>
+
+<ul>
+
+<li>Nagbibigay ng hanapbuhay sa maraming Pilipino</li>
+<li>Nagbibigay ng murang produkto</li>
+<li>Tumutulong sa mga mahihirap na mamamayan</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="kalakalan">
+
+<div class="card">
+
+<h2>Kalakalang Panlabas</h2>
+
+<p>
+Ang kalakalang panlabas ay ang pagpapalitan ng produkto at serbisyo sa pagitan ng mga bansa.
+</p>
+
+<h3>Uri ng Kalakalan</h3>
+
+<ul>
+
+<li>Export – pagluluwas ng produkto</li>
+<li>Import – pag-aangkat ng produkto</li>
+
+</ul>
+
+<h3>Mga Dahilan ng Kalakalan</h3>
+
+<ul>
+
+<li>Pagkakaiba sa teknolohiya</li>
+<li>Pagkakaiba sa likas na yaman</li>
+<li>Pagkakaiba sa panlasa</li>
+<li>Pagkakaiba sa gastos ng produksyon</li>
+
+</ul>
+
+<canvas id="tradeChart" width="700" height="350"></canvas>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Ekonomiks Learning Website | Araling Panlipunan</p>
+
+</footer>
+
+<script>
+
+function createChart(id,data,labels){
+
+let canvas=document.getElementById(id)
+let ctx=canvas.getContext("2d")
+
+let width=80
+let gap=50
+let base=300
+
+data.forEach((value,i)=>{
+
+let x=60+(width+gap)*i
+let height=value
+
+ctx.fillStyle="#2563eb"
+ctx.fillRect(x,base-height,width,height)
+
+ctx.fillStyle="black"
+ctx.fillText(labels[i],x,330)
+
+})
+
+}
+
+createChart("agriChart",[200,150,120,100],["Pagsasaka","Pangingisda","Hayupan","Gubat"])
+
+createChart("industryChart",[220,180,130,110],["Mining","Manufacturing","Construction","Utilities"])
+
+createChart("serviceChart",[210,170,150,120],["Transport","Trade","Finance","Real Estate"])
+
+createChart("tradeChart",[220,160],["Export","Import"])
+
+</script>
+
+</body>
+</html>

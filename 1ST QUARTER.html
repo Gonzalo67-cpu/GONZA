@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Links and Inputs</title>
+<link rel="stylesheet" href="1ST QUARTER CSS.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+<h1>1ST QUARTER</h1>
+<p>ICT Web Development Lesson</p>
+</header>
+
+<section>
+
+<h2>Hyperlinks</h2>
+
+<p>
+A hyperlink is a connection from one webpage to another webpage, file, email address,
+or location within the same page. Hyperlinks allow users to navigate through websites
+easily by clicking text or images.
+</p>
+
+<p>
+Hyperlinks are created using the anchor tag <b>&lt;a&gt;</b>. The destination of the link
+is placed inside the <b>href</b> attribute.
+</p>
+
+<h3>Basic Syntax</h3>
+
+<pre>
+&lt;a href="https://example.com"&gt;Visit Website&lt;/a&gt;
+</pre>
+
+<h3>Example</h3>
+
+<a href="https://example.com" target="_blank">Example Website</a>
+
+</section>
+
+<section>
+
+<h2>HTML Links</h2>
+
+<p>
+HTML links are clickable elements that direct users to another page,
+another section of the same page, a file download, or an email address.
+Links are one of the most important parts of web navigation.
+</p>
+
+<h3>Types of HTML Links</h3>
+
+<ul>
+<li><b>External Link</b> – Opens another website.</li>
+<li><b>Internal Link</b> – Links to another page in the same website.</li>
+<li><b>Anchor Link</b> – Links to a section within the same page.</li>
+<li><b>Email Link</b> – Opens the email application.</li>
+<li><b>Image Link</b> – Uses an image as the clickable link.</li>
+</ul>
+
+<h3>Example of Email Link</h3>
+
+<pre>
+&lt;a href="mailto:example@email.com"&gt;Send Email&lt;/a&gt;
+</pre>
+
+</section>
+
+<section>
+
+<h2>Link Attributes</h2>
+
+<p>
+Attributes provide additional information about the hyperlink.
+They modify how the link behaves when clicked.
+</p>
+
+<ul>
+
+<li><b>href</b> – Specifies the destination URL.</li>
+
+<li><b>target</b> – Defines where the link will open.
+<ul>
+<li>_self – Opens in the same tab</li>
+<li>_blank – Opens in a new tab</li>
+<li>_parent – Opens in the parent frame</li>
+<li>_top – Opens in the full window</li>
+</ul>
+</li>
+
+<li><b>title</b> – Shows extra information when hovering over the link.</li>
+
+<li><b>rel</b> – Defines the relationship between the current page and the linked document.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>HTML Input</h2>
+
+<p>
+HTML inputs are elements used inside forms to collect information from users.
+They allow users to type text, select options, upload files, and perform other actions.
+</p>
+
+<p>
+Input elements are created using the <b>&lt;input&gt;</b> tag and are commonly placed inside
+a <b>&lt;form&gt;</b> element.
+</p>
+
+<h3>Basic Syntax</h3>
+
+<pre>
+&lt;input type="text"&gt;
+</pre>
+
+</section>
+
+<section>
+
+<h2>Types of HTML Inputs</h2>
+
+<ul>
+
+<li><b>text</b> – Single line text input</li>
+<li><b>password</b> – Hidden text for passwords</li>
+<li><b>email</b> – Email address input</li>
+<li><b>number</b> – Numeric input</li>
+<li><b>checkbox</b> – Multiple selection options</li>
+<li><b>radio</b> – Select one option</li>
+<li><b>file</b> – Upload files</li>
+<li><b>submit</b> – Submit the form</li>
+<li><b>reset</b> – Reset the form fields</li>
+<li><b>date</b> – Select a date</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Input Attributes</h2>
+
+<p>
+Attributes control how input fields behave and how data is collected.
+</p>
+
+<ul>
+
+<li><b>type</b> – Defines the type of input.</li>
+<li><b>name</b> – Identifies the input when submitting form data.</li>
+<li><b>value</b> – Specifies the default value.</li>
+<li><b>placeholder</b> – Displays hint text inside the input field.</li>
+<li><b>required</b> – Makes the field mandatory.</li>
+<li><b>maxlength</b> – Limits the number of characters.</li>
+<li><b>readonly</b> – Prevents editing.</li>
+<li><b>disabled</b> – Disables the input field.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Example Form</h2>
+
+<form>
+
+<label>Name:</label><br>
+<input type="text" placeholder="Enter your name"><br><br>
+
+<label>Email:</label><br>
+<input type="email" placeholder="Enter your email"><br><br>
+
+<label>Password:</label><br>
+<input type="password"><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</section>
+
+<footer>
+<p>ICT Web Development Lesson | HTML Links and Inputs</p>
+</footer>
+
+</body>
+</html>
